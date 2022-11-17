@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const GetterTableDataContainer = styled.div`
   margin: 20px 0 0 0;
-  padding: 0 80px;
+  padding: 0;
 
   @media screen and (max-width: 400px) {
-    padding: 20px 10px; 
+    
   }
 `;
 export const Image1 = styled.img`

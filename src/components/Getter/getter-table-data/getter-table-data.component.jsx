@@ -27,7 +27,7 @@ class GetterTableData extends Component {
   }
 
   render() {
-    const { coins } = this.state;
+    // const { coins } = this.state;
 
     return (
       <GetterTableDataContainer>

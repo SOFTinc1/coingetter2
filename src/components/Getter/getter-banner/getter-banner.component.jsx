@@ -37,7 +37,7 @@ export default function GetterBanner() {
 
       <Section2>
         <BannerText>
-          Live Crytocurrency <BannerTextSpan>Prices</BannerTextSpan> and{" "}
+          Live Cryptocurrency <BannerTextSpan>Prices</BannerTextSpan> and{" "}
           <BannerTextSpan>Market Cap </BannerTextSpan>
         </BannerText>
         <BannerDetails>

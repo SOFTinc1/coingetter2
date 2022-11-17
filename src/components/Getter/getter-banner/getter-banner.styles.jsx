@@ -39,7 +39,7 @@ export const BannerText = styled.h1`
   text-transform: lowercase;
 
   @media screen and (max-width: 800px) {
-    font-size: 52px;
+    font-size: 46px;
     padding: 0;
   }
 `;

@@ -3,9 +3,10 @@
   overflow: auto;
 }
 
-/* .move {
-  margin: 8em 0 0 0!important;
-} */
+.horizontal-scroll-except-first-column > table > * > tr {
+  margin: 8em 0 0 0 !important;
+  border-radius: 50px;
+}
 
 .horizontal-scroll-except-first-column > table > * > tr > th:first-child,
 .horizontal-scroll-except-first-column > table > * > tr > td:first-child {
@@ -23,7 +24,7 @@
   margin: 30px 0 0 0;
 }
 .horizontal-scroll-except-first-column > table > * > tr > th {
-  background: #FAFAFA;
+  background: #fafafa;
   font-size: 16px;
   font-family: euclid;
   padding: 30px;
@@ -31,7 +32,7 @@
   text-transform: capitalize;
 }
 .horizontal-scroll-except-first-column > table > * > tr > td {
-  background: #ECEFF1;
+  background: #eceff1;
   font-size: 16px;
   padding: 30px;
   font-family: euclid;
@@ -44,4 +45,23 @@
   /* Without this, if a cell wraps onto two lines, the first column
    * will look bad, and may need padding. */
   white-space: nowrap;
+}
+
+@media screen and (max-width: 800px) {
+  .horizontal-scroll-except-first-column > table > * > tr > th:first-child,
+  .horizontal-scroll-except-first-column > table > * > tr > td:first-child {
+    position: absolute;
+    padding: 15px;
+    font-size: 10px;
+    width: 18em;
+    border: none;
+  }
+  .horizontal-scroll-except-first-column > table > * > tr > th {
+    font-size: 10px;
+    padding: 15px;
+  }
+  .horizontal-scroll-except-first-column > table > * > tr > td {
+    font-size: 10px;
+    padding: 15px;
+  }
 }
