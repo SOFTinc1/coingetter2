@@ -1,0 +1,46 @@
+.horizontal-scroll-except-first-column {
+  width: 100%;
+  overflow: auto;
+}
+
+/* .move {
+  margin: 8em 0 0 0!important;
+} */
+
+.horizontal-scroll-except-first-column > table > * > tr > th:first-child,
+.horizontal-scroll-except-first-column > table > * > tr > td:first-child {
+  position: absolute;
+  padding: 30px;
+  font-size: 16px;
+  width: 22em;
+  border: none;
+  margin: auto;
+  text-transform: uppercase;
+  /* margin-left: 5em; */
+}
+.horizontal-scroll-except-first-column > table > * > tr > {
+  margin: 30px 0 0 0;
+}
+.horizontal-scroll-except-first-column > table > * > tr > th {
+  background: #FAFAFA;
+  font-size: 16px;
+  font-family: euclid;
+  padding: 30px;
+  margin: auto;
+  text-transform: capitalize;
+}
+.horizontal-scroll-except-first-column > table > * > tr > td {
+  background: #ECEFF1;
+  font-size: 16px;
+  padding: 30px;
+  font-family: euclid;
+  margin: auto;
+  text-transform: capitalize;
+}
+
+.horizontal-scroll-except-first-column > table > * > tr > th,
+.horizontal-scroll-except-first-column > table > * > tr > td {
+  /* Without this, if a cell wraps onto two lines, the first column
+   * will look bad, and may need padding. */
+  white-space: nowrap;
+}

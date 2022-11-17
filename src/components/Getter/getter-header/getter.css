@@ -1,0 +1,47 @@
+.option-nav {
+  color: #000;
+  font-family: typo;
+  font-weight: 800;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  margin: auto 0;
+}
+.option-nav:hover {
+  color: #000;
+}
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.navbar .navbar-toggler-icon {
+  background-image: url("../../../assets/svg/menu.svg");
+  width: 2rem;
+  height: 2rem;
+}
+.navbar-inverse .navbar-toggler-icon {
+  background-image: url("../../../assets/svg/menu.svg");
+  width: 2rem;
+  height: 2rem;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("../../../assets/svg/menu.svg");
+  width: 2rem;
+  height: 2rem;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+@media screen and (max-width: 800px) {
+  .usd-button {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    border: none;
+    margin: 0;
+  }
+}
