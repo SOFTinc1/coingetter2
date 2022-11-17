@@ -7,7 +7,7 @@ export const FooterContainer = styled.div`
   display: flex;
   gap: 560px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     display: block;
     gap: 20px;
   }
@@ -16,7 +16,7 @@ export const Row = styled.div`
   display: flex;
   gap: 20px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     align-items: center;
     justify-content: center;
   }
@@ -31,7 +31,7 @@ export const H1 = styled.h1`
   font-weight: 600;
   lettetr-spacing: 1px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     text-align: center;
   }
 `;
@@ -40,7 +40,7 @@ export const P = styled.p`
   font-family: euclid;
   text-transform: lowercase;
   
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     text-align: center;
   }
 `;

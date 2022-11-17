@@ -38,9 +38,10 @@ export const BannerText = styled.h1`
   padding: 64px 200px 20px 200px;
   text-transform: lowercase;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     font-size: 46px;
     padding: 0;
+    text-align: center;
   }
 `;
 export const BannerTextSpan = styled.span`

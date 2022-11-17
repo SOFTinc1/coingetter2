@@ -9,7 +9,7 @@ export const Row = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     display: block;
     padding: 0 10px;
   }
@@ -19,16 +19,20 @@ export const Card = styled.div`
   padding: 20px;
   background: #eaddff21;
   width: 420px;
-  // border-radius: 12px;
+  border-radius: 12px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 auto 20px auto;
   }
 `;
 export const Flex = styled.div`
   display: flex;
   gap: 40px;
+
+  @media screen and (max-width: 830px) {
+    gap: 0;
+  }
 `;
 export const Flex2 = styled.div`
   display: flex;
@@ -107,7 +111,8 @@ export const Image = styled.img`
   height: 282.5px;
   // border-radius: 12px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     width: 100%;
+    margin: 0 auto;
   }
 `;

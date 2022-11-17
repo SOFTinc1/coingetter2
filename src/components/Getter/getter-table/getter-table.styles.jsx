@@ -6,7 +6,7 @@ export const GetterTableContainer = styled.div`
   padding: 24px 40px;
   overflow: scroll;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 830px) {
     padding: 0;
   }
 `;
