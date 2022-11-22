@@ -1,5 +1,5 @@
 #custom-switch {
-  margin: 9.5px 0 0 -45px;
-  padding: 15px 25px;
-  /* height: auto; */
+  margin: 2px 0 0 -45px;
+  padding: 10px 15px;
+  box-shadow: none;
 }

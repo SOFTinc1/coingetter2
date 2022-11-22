@@ -3,7 +3,7 @@ import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 
 export const GetterTableContainer = styled.div`
-  padding: 24px 40px;
+  padding: 24px 0;
   overflow: scroll;
 
   @media screen and (max-width: 830px) {

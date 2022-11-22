@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const GetterHighpointContainer = styled.div`
   font-family: euclid;
-  margin: 40px 0 0 0;
+  margin: 0;
 `;
 export const Row = styled.div`
   display: grid;
@@ -109,7 +109,7 @@ export const Col3 = styled.div``;
 export const Image = styled.img`
   width: 400px;
   height: 282.5px;
-  // border-radius: 12px;
+  border-radius: 7px;
 
   @media screen and (max-width: 830px) {
     width: 100%;

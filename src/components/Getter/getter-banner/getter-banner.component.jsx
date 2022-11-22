@@ -7,17 +7,21 @@ import {
   H1,
   GreenSpan,
   Section2,
+  Text,
   BannerText,
   BannerTextSpan,
   BannerDetails,
   BannerDetailsSpan,
   Section3,
+  Section4,
   HeadContainer,
+  High,
   Head,
 } from "./getter-banner.styles";
 import "./getter.css";
 import Marquee from "react-fast-marquee";
 import GetterHighpoint from "../getter-highpoint/getter-highpoint.component";
+import GetTableData from "../getter-table-data/getter-table-data.component";
 
 export default function GetterBanner() {
   const [open, setOpen] = useState(false);
@@ -36,18 +40,17 @@ export default function GetterBanner() {
       </Section1>
 
       <Section2>
-        <BannerText>
-          Live Cryptocurrency <BannerTextSpan>Prices</BannerTextSpan> and{" "}
-          <BannerTextSpan>Market Cap </BannerTextSpan>
-        </BannerText>
-        <BannerDetails>
-          The market cap of all cryptocurrencies is at $1,03T, up{" "}
-          <BannerDetailsSpan>2,28%</BannerDetailsSpan> in the last 24 hours
-        </BannerDetails>
-      </Section2>
-
-      <Section3>
-        <HeadContainer>
+        <Text>
+          <BannerText>
+            Live Cryptocurrency <BannerTextSpan>Prices</BannerTextSpan> and{" "}
+            <BannerTextSpan>Market Cap </BannerTextSpan>
+          </BannerText>
+          <BannerDetails>
+            The market cap of all cryptocurrencies is at $1,03T, up{" "}
+            <BannerDetailsSpan>2,28%</BannerDetailsSpan> in the last 24 hours
+          </BannerDetails>
+        </Text>
+        <High>
           <Head>Highpoint</Head>
           <Form.Check
             type="switch"
@@ -56,13 +59,23 @@ export default function GetterBanner() {
             aria-controls="example-collapse-text"
             aria-expanded={open}
           />
-        </HeadContainer>
+        </High>
+        {/* The total crypto market volume over the last 24 hours is $51.47B, which makes a 17.21% decrease. The total volume in DeFi is currently $2.67B, 5.18% of the total crypto market 24-hour volume. The volume of all stable coins is now $48.14B, which is 93.54% of the total crypto market 24-hour volume.
+Bitcoin’s dominance is currently 38.56%, an increase of 0.23% over the day. */}
+      </Section2>
+
+      <Section3>
+        <HeadContainer></HeadContainer>
         <Collapse in={open}>
           <div id="example-collapse-text">
             <GetterHighpoint />
           </div>
         </Collapse>
       </Section3>
+
+      <Section4>
+        <GetTableData />
+      </Section4>
     </GetterBannerContainer>
   );
 }

@@ -19,7 +19,7 @@ export const Image1 = styled.img`
   }
 `;
 export const Tr = styled.tr`
-  margin: 20px 0 80px 0;
+  
 
   @media screen and (max-width: 400px) {
     
