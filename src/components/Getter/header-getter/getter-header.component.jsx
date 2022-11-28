@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import {
   GetterHeaderContainer,
   LogoImg,
-  Image1,
   ButtonC,
 } from "./getter-header.styles";
 import Container from "react-bootstrap/Container";
@@ -13,7 +12,6 @@ import Logo from "../../../assets/svg/logo.png";
 import Search from "../../Getter/search/search";
 import Search2 from "../../Getter/search2/search2";
 import "./getter.css";
-import Usdsettings from "../../../assets/svg/usdsettings.svg";
 
 export default function GetterHeader() {
   let navigate = useNavigate();
@@ -22,7 +20,7 @@ export default function GetterHeader() {
       <Navbar bg="transparent" expand="lg" className="big-header">
         <Container fluid>
           <Form id="openonmobile">
-            <Search2 />
+            <Search2 placeholder="search for your favourite coin" />
           </Form>
 
           <Navbar.Brand
@@ -37,7 +35,7 @@ export default function GetterHeader() {
 
           <Navbar.Collapse id="navbarScroll">
             <Nav className="ms-auto my-2 my-lg-0" navbarScroll>
-              <Nav.Link className="option-nav">
+              <Nav.Link className="option-nav" id="openondesktop">
                 <Form>
                   <Search placeholder="search coin name" />
                 </Form>
@@ -66,38 +64,6 @@ export default function GetterHeader() {
               >
                 NFT
               </Nav.Link>
-              {/* <Nav.Link
-                  onClick={() => {
-                    navigate("/marketplace");
-                  }}
-                  className="option-nav"
-                >
-                  cryptocurrencies
-                </Nav.Link>
-                <Nav.Link
-                  onClick={() => {
-                    navigate("/marketplace");
-                  }}
-                  className="option-nav"
-                >
-                  exchanges
-                </Nav.Link> */}
-              {/* <Nav.Link
-                onClick={() => {
-                  navigate("/marketplace");
-                }}
-                className="option-nav"
-              >
-                learn
-              </Nav.Link>
-              <Nav.Link
-                onClick={() => {
-                  navigate("/marketplace");
-                }}
-                className="option-nav"
-              >
-                product
-              </Nav.Link> */}
               <Nav.Link
                 onClick={() => {
                   navigate("/marketplace");
@@ -107,7 +73,7 @@ export default function GetterHeader() {
                 portfolio
               </Nav.Link>
               <Nav.Link className="option-nav">
-                <ButtonC>&#36;USD</ButtonC>
+                <ButtonC>&#36; USD</ButtonC>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

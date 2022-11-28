@@ -27,23 +27,27 @@ export const FormInputContainer = styled.input`
     transition: width 0.4s ease-in-out;
     background-image: url(${SearchIcon});
     border: none;
-    color: #000;
+    // color: #000;
   }
   &:focus {
+    &::placeholder {
+      opacity: 1;
+    }
     @media screen and (max-width: 400px) {
-      background: #FAFAFA;
+      background: #f5f5f5;
       width: 100vw;
       position: absolute;
       border-radius: 0px;
       margin: -37px 0 0 -30px;
-      // margin: -37px 0 0 -287px;
       padding: 25px 0 25px 5px;
       color: #000;
       outline: none;
       border: none;
+      // background: #FAFAFA;
+      // margin: -37px 0 0 -287px;
     }
     @media screen and (max-width: 525px) {
-      background: #FAFAFA;
+      background: #f5f5f5;
       width: 100%;
       position: absolute;
       margin: -37px 0 0 -30px;
@@ -52,6 +56,15 @@ export const FormInputContainer = styled.input`
       color: #000;
       outline: none;
       border: none;
+      // background: #FAFAFA;
     }
+  }
+
+  &::placeholder {
+    opacity: 0;
+    font-family: euclid;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
   }
 `;

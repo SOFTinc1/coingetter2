@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/Homepage.component";
 import Swap from "./components/Swap/swap-component/swap.component";
 import Getter from "./pages/getter/getter.component";
-// import GetterTableData from "./components/Getter/getter-table-data/getter-table-data.component";
+import GetterDetails from "./components/GetterDetails/GetterDetails.component";
 import Marketplace from "./pages/marketplace/marketplace.component";
 import Footer from "./components/footer/footer.component";
 
@@ -35,6 +35,7 @@ class App extends React.Component {
           <Route exact path="/swap" element={<Swap />} />
           <Route exact path="/getter" element={<Getter />} />
           <Route exact path="/marketplace" element={<Marketplace />} />
+          <Route exact path="/details" element={<GetterDetails />} />
         </Routes>
         <Footer />
       </div>

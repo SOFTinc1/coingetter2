@@ -1,11 +1,9 @@
 import React from "react";
-import "./search2.css";
-import { GroupContainer, FormInputContainer, SearchImg } from "./search2.styles";
+import { GroupContainer, FormInputContainer } from "./search2.styles";
 
 const Search2 = ({ placeholder, handleChange }) => (
   <GroupContainer>
-    <FormInputContainer className="extend"/>
-    {/* <SearchImg src={SearchIcon} /> */}
+    <FormInputContainer placeholder={placeholder} className="extend"/>
   </GroupContainer>
 );
 

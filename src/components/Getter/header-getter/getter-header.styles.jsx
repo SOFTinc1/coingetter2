@@ -20,13 +20,6 @@ export const LogoImg = styled.img`
     width: 150px;
   }
 `;
-export const Image1 = styled.img`
-  width: 30%;
-
-  @media screen and (max-width: 800px) {
-    width: 10%;
-  }
-`;
 export const Usd = styled.h1`
   font-family: typo;
   font-weight: 800;
