@@ -21,6 +21,10 @@ export default function GetterHeader() {
     <GetterHeaderContainer>
       <Navbar bg="transparent" expand="lg" className="big-header">
         <Container fluid>
+          <Form id="openonmobile">
+            <Search2 />
+          </Form>
+
           <Navbar.Brand
             onClick={() => {
               navigate("/");
@@ -28,9 +32,7 @@ export default function GetterHeader() {
           >
             <LogoImg src={Logo} />
           </Navbar.Brand>
-          <Form className="ms-auto my-2" id="openonmobile">
-            <Search2 />
-          </Form>
+
           <Navbar.Toggle aria-controls="navbarScroll" />
 
           <Navbar.Collapse id="navbarScroll">

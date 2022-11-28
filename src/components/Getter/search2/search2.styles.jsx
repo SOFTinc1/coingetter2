@@ -30,14 +30,28 @@ export const FormInputContainer = styled.input`
     color: #000;
   }
   &:focus {
-    background: #E0E0E0;
-    width: 100%;
-    position: absolute;
-    margin: -37px 0 0 -287px;
-    border-radius: 0px;
-    padding: 25px 0 25px 5px;
-    color: #000;
-    outline: none;
-    border: none;
+    @media screen and (max-width: 400px) {
+      background: #FAFAFA;
+      width: 100vw;
+      position: absolute;
+      border-radius: 0px;
+      margin: -37px 0 0 -30px;
+      // margin: -37px 0 0 -287px;
+      padding: 25px 0 25px 5px;
+      color: #000;
+      outline: none;
+      border: none;
+    }
+    @media screen and (max-width: 525px) {
+      background: #FAFAFA;
+      width: 100%;
+      position: absolute;
+      margin: -37px 0 0 -30px;
+      border-radius: 0px;
+      padding: 25px 0 25px 5px;
+      color: #000;
+      outline: none;
+      border: none;
+    }
   }
 `;
