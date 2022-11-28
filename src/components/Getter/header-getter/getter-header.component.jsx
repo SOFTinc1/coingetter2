@@ -11,6 +11,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Logo from "../../../assets/svg/logo.png";
 import Search from "../../Getter/search/search";
+import Search2 from "../../Getter/search2/search2";
 import "./getter.css";
 import Usdsettings from "../../../assets/svg/usdsettings.svg";
 
@@ -27,6 +28,9 @@ export default function GetterHeader() {
           >
             <LogoImg src={Logo} />
           </Navbar.Brand>
+          <Form className="ms-auto my-2" id="openonmobile">
+            <Search2 />
+          </Form>
           <Navbar.Toggle aria-controls="navbarScroll" />
 
           <Navbar.Collapse id="navbarScroll">
@@ -57,10 +61,10 @@ export default function GetterHeader() {
                   navigate("/marketplace");
                 }}
                 className="option-nav"
-                >
+              >
                 NFT
               </Nav.Link>
-                {/* <Nav.Link
+              {/* <Nav.Link
                   onClick={() => {
                     navigate("/marketplace");
                   }}

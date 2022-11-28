@@ -1,3 +1,6 @@
+#openonmobile {
+  display: none;
+}
 .option-nav {
   color: #363f4a;
   font-family: euclid;
@@ -50,5 +53,8 @@
   .option-nav {
     font-size: 24px;
     /* margin: 0; */
+  }
+  #openonmobile {
+    display: block;
   }
 }
