@@ -1,3 +1,9 @@
+.openinmobile{ 
+  display: none;
+}
+.closeinmobile {
+  display: block;
+}
 .option-nav {
   color: #363f4a;
   font-family: euclid;
@@ -10,10 +16,6 @@
 .option-nav:hover {
   color: #000;
 }
-/* .option-nav-purple {
-  background-color: #732eff;
-  color: #FFF;
-} */
 .navbar-toggler {
   background-color: transparent;
   border: none;
@@ -43,6 +45,11 @@
 @media screen and (max-width: 800px) {
   .option-nav {
     font-size: 24px;
-    /* margin: 0; */
+  }
+  .openinmobile{ 
+    display: block;
+  }
+  .closeinmobile {
+    display: none;
   }
 }

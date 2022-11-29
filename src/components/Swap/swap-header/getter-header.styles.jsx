@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Button from "../../button/button";
 
 export const GetterHeaderContainer = styled.div`
   padding: 0 80px;
@@ -20,11 +19,15 @@ export const LogoImg = styled.img`
     width: 150px;
   }
 `;
-export const ButtonC = styled(Button)`
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  padding: 10px 20px;
+export const ImageWallet = styled.img`
+  padding: 10px 15px;
+  width: 50px;
+  background: #eaddff21;
   border-radius: 50px;
-  font-size: 16px;
+
+  @media screen and (max-width: 800px) {
+    width: 50px;
+    margin: auto;
+    border-radius: 40px;
+  }
 `;

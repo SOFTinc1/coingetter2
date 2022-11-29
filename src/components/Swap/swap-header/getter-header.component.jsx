@@ -2,12 +2,13 @@ import { useNavigate } from "react-router-dom";
 import {
   GetterHeaderContainer,
   LogoImg,
-  ButtonC,
+  ImageWallet,
 } from "./getter-header.styles";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Logo from "../../../assets/svg/logo.png";
+import Wallet from "../../../assets/svg/wallet.svg";
 import "./getter.css";
 
 export default function SwapHeader() {
@@ -23,8 +24,12 @@ export default function SwapHeader() {
           >
             <LogoImg src={Logo} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
 
+          <Nav.Link className="my-2 my-lg-0 ms-auto openinmobile">
+            <ImageWallet src={Wallet} />
+          </Nav.Link>
+
+          <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="ms-auto my-2 my-lg-0" navbarScroll>
               <Nav.Link
@@ -45,8 +50,8 @@ export default function SwapHeader() {
               >
                 marketplace
               </Nav.Link>
-              <Nav.Link href="#action2" className="option-nav">
-                <ButtonC>connect wallet</ButtonC>
+              <Nav.Link className="option-nav closeinmobile">
+                <ImageWallet src={Wallet} />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

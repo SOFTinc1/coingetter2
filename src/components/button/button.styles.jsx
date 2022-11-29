@@ -8,11 +8,12 @@ export const ButtonContainer = styled.div`
   font-family: euclid;
   font-weight: 600;
   text-transform: capitalize;
-  // color: #732eff;
-  // background: #732eff;
-  // font-size: 18px;
+  transition: all .9s ease-in-out;
 
   &:hover {
-
+    background-color: #444946;
+    color: #fff;
+    border: none;
+    transform: scale(1.0);
   }
 `;
