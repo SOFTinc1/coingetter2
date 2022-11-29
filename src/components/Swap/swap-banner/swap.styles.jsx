@@ -65,10 +65,10 @@ export const Equi = styled.div`
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
-  margin: 0 15px 0 auto;
+  margin: 0 25px 0 auto;
 
   @media only screen and (max-width: 800px) {
-    
+    margin: 0 20px 0 auto;
   }
 `;
 export const Down = styled.div`
@@ -106,7 +106,7 @@ export const Flex = styled.div`
   margin: 0 0 0 auto;
 
   @media only screen and (max-width: 400px) {
-    gap: 4px;
+    gap: 1px;
     margin: 0 0 0 auto;
   }
 `;
@@ -114,7 +114,7 @@ export const CoinLogo = styled.img`
   width: 30%;
 
   @media only screen and (max-width: 400px) {
-    width: 27%;
+    width: 25%;
   }
 `;
 export const CoinName = styled.p`
