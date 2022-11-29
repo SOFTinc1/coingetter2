@@ -1,8 +1,5 @@
-import SwapHeader from "../swap-header/getter-header.component";
 import {
-  SwapContainer,
-  // TabsContainer,
-  // TabContainer,
+  SwapBannerContainer,
   Split,
   Card,
   Title,
@@ -31,13 +28,11 @@ import {
   RecievedA,
   Green
 } from "./swap.styles";
-import "./swap.css";
 import Coin from "../../../assets/svg/bitcoin.svg";
 import SwapLogo from "../../../assets/svg/swap.png";
 
-const Swap = () => (
-  <SwapContainer>
-    <SwapHeader />
+const SwapBanner = () => (
+  <SwapBannerContainer>
     <Split>
       <Card className="card">
         <Title>exchange</Title>
@@ -106,18 +101,7 @@ const Swap = () => (
         
       </Card2>
     </Split>
-  </SwapContainer>
+  </SwapBannerContainer>
 );
 
-export default Swap;
-
-{
-  /* <TabsContainer defaultActiveKey="first" className="swap">
-      <TabContainer eventKey="first" title="Exchange" className="nav-item nav-link">
-        works
-      </TabContainer>
-      <TabContainer eventKey="second" title="Liquidity" className="nav-item nav-link">
-        works again
-      </TabContainer>
-    </TabsContainer> */
-}
+export default SwapBanner;

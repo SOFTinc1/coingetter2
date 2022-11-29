@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
 
 import HomePage from "./pages/HomePage/Homepage.component";
-import Swap from "./components/Swap/swap-component/swap.component";
+import Swap from "./pages/swap/swap.component";
 import Getter from "./pages/getter/getter.component";
 import GetterDetails from "./components/GetterDetails/GetterDetails.component";
 import Marketplace from "./pages/marketplace/marketplace.component";

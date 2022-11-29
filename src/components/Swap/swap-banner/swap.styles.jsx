@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import Button from "../../button/button";
-// import Tabs from "react-bootstrap/Tabs";
-// import Tab from "react-bootstrap/Tab";
 
-export const SwapContainer = styled.div`
+export const SwapBannerContainer = styled.div`
   padding: 0;
   font-family: euclid;
+  margin: 0;
 
   @media only screen and (max-width: 800px) {
   }
@@ -49,8 +48,7 @@ export const Row = styled.div`
   border-radius: 7px;
 `;
 export const Up = styled.div`
-  display: grid;
-  grid-template-columns: 3.6fr 1fr;
+  display: flex;
   grid-gap: 32px;
 
   @media only screen and (max-width: 800px) {
@@ -59,24 +57,22 @@ export const Up = styled.div`
   }
 `;
 export const From = styled.div`
-  // font-family: euclid;
   font-weight: 400;
   font-size: 16px;
   text-transform: capitalize;
 `;
 export const Equi = styled.div`
-  // font-family: euclid;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
+  margin: 0 15px 0 auto;
 
   @media only screen and (max-width: 800px) {
-    margin: 0 0 0 65px;
+    
   }
 `;
 export const Down = styled.div`
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
   grid-gap: 32px;
   margin: 10px 0 0 0;
 
@@ -86,7 +82,6 @@ export const Down = styled.div`
   }
 `;
 export const UserInput = styled.input`
-  // font-family: euclid;
   border: none;
   font-weight: 600;
   font-size: 16px;
@@ -96,7 +91,6 @@ export const UserInput = styled.input`
   background: transparent;
 
   &::placeholder {
-    // font-family: euclid;
     font-weight: 600;
     font-size: 16px;
     color: #732eff;
@@ -105,30 +99,34 @@ export const UserInput = styled.input`
 `;
 export const Flex = styled.div`
   display: flex;
-  gap: 3px;
+  gap: 0;
   background: #e0e0e0;
   padding: 10px 8px;
   border-radius: 50px;
+  margin: 0 0 0 auto;
 
   @media only screen and (max-width: 400px) {
-    width: 85px;
-    padding: 10px;
-    margin: 0;
+    gap: 4px;
+    margin: 0 0 0 auto;
   }
-  // @media only screen and (max-width: 525px) {
-  //   margin: 0 0 0 20px;
-  // }
 `;
 export const CoinLogo = styled.img`
-  width: 25%;
+  width: 30%;
+
+  @media only screen and (max-width: 400px) {
+    width: 27%;
+  }
 `;
 export const CoinName = styled.p`
-  // font-family: euclid;
   font-weight: 600;
   letter-spacing: 1px;
-  font-size: 9px;
-  margin: 2.5px 0 0 0;
+  font-size: 10px;
+  margin: auto 10px auto auto;
   text-transform: uppercase;
+
+  @media only screen and (max-width: 400px) {
+    
+  }
 `;
 export const SwapIcon = styled.img`
   width: 40px;
@@ -150,7 +148,6 @@ export const PriceDiv = styled.div`
   }
 `;
 export const Price = styled.div`
-  // font-family: euclid;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 14px;
@@ -158,17 +155,14 @@ export const Price = styled.div`
 `;
 export const Amount = styled.h1`
   font-size: 14px;
-  margin: 4px 0 0 130px;
+  margin: auto 0 auto auto;
   font-family: euclid;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: capitalize;
 
-  @media only screen and (max-width: 390px) {
-    margin: 4px 0 0 45px;
-  }
-  @media only screen and (max-width: 420px) {
-    margin: 4px 0 0 80px;
+  @media only screen and (max-width: 800px) {
+    
   }
 `;
 export const TokenName = styled.span`
@@ -228,10 +222,3 @@ export const Green = styled.h1`
   font-size: 16px;
   text-transform: capitalize;
 `;
-
-// export const TabsContainer = styled(Tabs)`
-// color: #000;
-// `;
-// export const TabContainer = styled(Tab)`
-//   color: #000;
-// `;

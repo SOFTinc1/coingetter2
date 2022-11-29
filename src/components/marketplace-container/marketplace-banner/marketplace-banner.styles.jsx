@@ -12,7 +12,7 @@ export const MarketplaceBannerContainer = styled.div`
 `;
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1.9fr 1.1fr;
   grid-gap: 10px;
   padding: 30px 0 0 0;
 
@@ -74,12 +74,12 @@ export const ImageSrc3 = styled.img`
   }
 `;
 export const Col2 = styled.div`
-@media screen and (max-width: 512px) {
-  margin: 70px auto 0 auto;
-}
-@media screen and (max-width: 400px) {
-  margin: 0 auto 0 auto;
-}
+  @media screen and (max-width: 512px) {
+    margin: 70px auto 0 auto;
+  }
+  @media screen and (max-width: 400px) {
+    margin: 0 auto 0 auto;
+  }
 `;
 export const Small = styled.h2`
   font-family: euclid;
@@ -124,7 +124,7 @@ export const ButtonC = styled(Button)`
   width: 30%;
   margin: auto;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   border-radius: 50px;
 
   @media screen and (max-width: 800px) {
@@ -133,8 +133,7 @@ export const ButtonC = styled(Button)`
 `;
 export const Col3 = styled.div`
   display: flex;
-  gap: 0;
-  margin: 0;
+  gap: 10px;
 
   @media screen and (max-width: 800px) {
     gap: 10px;
@@ -167,7 +166,7 @@ export const ImageSrc6 = styled.img`
   width: 100%;
   height: 80%;
   border-radius: 12px;
-  margin: 50px 0 auto 20px;
+  margin: 50px 0 auto 0;
 
   @media screen and (max-width: 800px) {
     width: 150px;
