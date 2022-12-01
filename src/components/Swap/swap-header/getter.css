@@ -42,7 +42,7 @@
   outline: none;
   box-shadow: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 830px) {
   .option-nav {
     font-size: 24px;
   }

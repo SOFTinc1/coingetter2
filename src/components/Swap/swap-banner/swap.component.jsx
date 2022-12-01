@@ -90,11 +90,11 @@ const SwapBanner = () => (
             <RecievedA>54.83 <TokenName>bitcoin</TokenName></RecievedA>
           </Div>
           <Div>
-          <Recieved>price imoact:</Recieved>
+            <Recieved>price imoact:</Recieved>
             <Green>0.006%</Green>
           </Div>
           <Div>
-          <Recieved>liquidity provider fee: </Recieved>
+            <Recieved>liquidity provider fee: </Recieved>
             <RecievedA>0.05 <TokenName>bnb</TokenName></RecievedA>
           </Div>
         </DetailsDiv>

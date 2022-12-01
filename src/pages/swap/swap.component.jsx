@@ -15,10 +15,10 @@ const Swap = () => {
         id="noanim-tab-example"
         className="mb-3 cover"
       >
-        <Tab eventKey="home" title="Home">
+        <Tab eventKey="home" title="swap">
           <SwapBanner />
         </Tab>
-        <Tab eventKey="profile" title="Profile">
+        <Tab eventKey="profile" title="other">
           <H1>coming soon</H1>
         </Tab>
       </Tabs>

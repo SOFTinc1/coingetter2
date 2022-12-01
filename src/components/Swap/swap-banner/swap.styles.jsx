@@ -6,7 +6,14 @@ export const SwapBannerContainer = styled.div`
   font-family: euclid;
   margin: 0;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 830px) {
+    padding: 0 60px;
+  }
+  @media only screen and (max-width: 525px) {
+    padding: 0 5px;
+  }
+  @media only screen and (max-width: 400px) {
+    padding: 0 5px;
   }
 `;
 export const Split = styled.div`
@@ -15,7 +22,7 @@ export const Split = styled.div`
   grid-gap: 32px;
   padding: 40px 200px;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 830px) {
     display: block;
     padding: 40px 0;
   }
@@ -51,7 +58,7 @@ export const Up = styled.div`
   display: flex;
   grid-gap: 32px;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 830px) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
@@ -67,8 +74,8 @@ export const Equi = styled.div`
   letter-spacing: 1px;
   margin: 0 25px 0 auto;
 
-  @media only screen and (max-width: 800px) {
-    margin: 0 20px 0 auto;
+  @media only screen and (max-width: 830px) {
+    margin: 0 15px 0 auto;
   }
 `;
 export const Down = styled.div`
@@ -76,7 +83,7 @@ export const Down = styled.div`
   grid-gap: 32px;
   margin: 10px 0 0 0;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 830px) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 0px;
   }
@@ -143,7 +150,7 @@ export const PriceDiv = styled.div`
   grid-gap: 32px;
   padding: 20px;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 830px) {
     padding: 10px;
   }
 `;
@@ -161,7 +168,7 @@ export const Amount = styled.h1`
   letter-spacing: 1px;
   text-transform: capitalize;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 830px) {
     
   }
 `;
@@ -177,7 +184,7 @@ export const ButtonC = styled(Button)`
   border-radius: 50px;
   font-size: 18px;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 830px) {
     width: 100%;
     margin: 30px 0 0 0;
   }
@@ -188,7 +195,7 @@ export const Card2 = styled.div`
   border-radius: 7px;
   border: 1px solid #e0e0e0;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 830px) {
     margin: 30px 0 0 0;
   }
 `;
@@ -196,29 +203,27 @@ export const DetailsDiv = styled.div`
   margin: 50px 0 0 0;
 `;
 export const Div = styled.span`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
+  display: flex;
+  grid-gap: 20px;
 `;
 export const Recieved = styled.h1`
-  // font-family: euclid;
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 16px;
   text-transform: capitalize;
 `;
 export const RecievedA = styled.h1`
-  // font-family: euclid;
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 16px;
   text-transform: capitalize;
+  margin: 0 10px 0 auto;
 `;
 export const Green = styled.h1`
-  // font-family: euclid;
   color: green;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 16px;
   text-transform: capitalize;
+  margin: 0 10px 0 auto;
 `;
