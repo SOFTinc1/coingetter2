@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const GetterHeaderContainer = styled.div`
   padding: 0 80px;
-  // background: #eaddff21;
+  background: #ffffff!important;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
 
   @media screen and (max-width: 830px) {

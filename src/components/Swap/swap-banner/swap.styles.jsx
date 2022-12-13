@@ -30,12 +30,13 @@ export const Split = styled.div`
 export const Card = styled.div`
   background: #fff;
   padding: 20px;
-  border-radius: 7px;
-  border: 1px solid #e0e0e0;
+  border: none;
+  border-radius: 0px;
+  // border-radius: 7px;
+  // border: 1px solid #e0e0e0;
   // box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
 `;
 export const Title = styled.h1`
-  // font-family: euclid;
   font-weight: 600;
   font-size: 16px;
   margin: 0;
@@ -44,7 +45,6 @@ export const Title = styled.h1`
   text-transform: capitalize;
 `;
 export const P = styled.p`
-  // font-family: euclid;
   font-weight: 400;
   font-size: 16px;
 `;
@@ -139,9 +139,11 @@ export const SwapIcon = styled.img`
   width: 40px;
   display: block;
   margin: 20px auto;
-  background: #732eff;
+  // background: #732eff;
+  background: #eaddff21; 
   padding: 10px;
   border-radius: 50%;
+  cursor: pointer;
 `;
 export const ToDiv = styled.div``;
 export const PriceDiv = styled.div`
@@ -192,8 +194,10 @@ export const ButtonC = styled(Button)`
 export const Card2 = styled.div`
   background: #fff;
   padding: 20px;
-  border-radius: 7px;
-  border: 1px solid #e0e0e0;
+  border: none;
+  border-radius: 0px;
+  // border-radius: 7px;
+  // border: 1px solid #e0e0e0;
 
   @media only screen and (max-width: 830px) {
     margin: 30px 0 0 0;
